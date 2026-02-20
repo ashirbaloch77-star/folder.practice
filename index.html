@@ -1,17 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+   <link rel="stylesheet" href="sytles.css">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>school form</title>
-</head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>School Admission Form</title>
+      
+            
 <body>
-   <h1><b>public school</b></h1>
-   <h2>registrion form</h2>
-   <table>
-<tr colspan="2">name</tr>
-<input type="text">
+   <div class="container">
+    <h1>Public School</h1>
+    <h2>Admission / Registration Form</h2>
 
-   </table>
+    <form id="admissionForm" action="#" method="post" novalidate>
+      <table>
+         <tr>
+            <td>
+               <label for="studentName">Student Name</label>
+               <input id="studentName" name="studentName" type="text" required placeholder="Full name">
+            </td>
+            <td>
+               <label for="fatherName">Father's Name</label>
+               <input id="fatherName" name="fatherName" type="text" required placeholder="Father's full name">
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="dob">Date of Birth</label>
+               <input id="dob" name="dob" type="date" required>
+            </td>
+            <td>
+               <label for="class">Applying For Class</label>
+               <select id="class" name="class" required>
+                  <option value="">Select class</option>
+                  <option>Nursery</option>
+                  <option>Kindergarten</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label>Gender</label>
+               <div class="radio-group">
+                  <label><input type="radio" name="gender" value="Male" required> Male</label>
+                  <label><input type="radio" name="gender" value="Female"> Female</label>
+                  <label><input type="radio" name="gender" value="Other"> Other</label>
+               </div>
+            </td>
+            <td>
+               <label for="phone">Phone</label>
+               <input id="phone" name="phone" type="tel" pattern="[0-9\-\s()+]{7,}" placeholder="e.g. +1 555 555 5555" required>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="2">
+               <label for="address">Address</label>
+               <textarea id="address" name="address" rows="3" required placeholder="Permanent address"></textarea>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="parentEmail">Parent / Guardian Email</label>
+               <input id="parentEmail" name="parentEmail" type="email" placeholder="parent@example.com">
+            </td>
+            <td class="row-actions">
+               <label>&nbsp;</label>
+               <button type="submit" class="btn">Submit Application</button>
+            </td>
+         </tr>
+      </table>
+    </form>
+   </div>
+
+   <script>
+      document.getElementById('admissionForm').addEventListener('submit', function(e) {
+         if (!this.checkValidity()) {
+            e.preventDefault();
+            this.reportValidity();
+            return;
+         }
+         e.preventDefault();
+         alert('Application submitted (demo).');
+      });
+   </script>
 </body>
 </html>

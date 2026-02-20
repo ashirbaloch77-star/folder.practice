@@ -1,0 +1,11 @@
+h1,h2 { text-align:center; margin:0 0 12px }
+            form table { width:100%; border-collapse:collapse }
+            form td { padding:8px; vertical-align:top }
+            label { display:block; font-weight:600; margin-bottom:6px }
+            input[type="text"], input[type="email"], input[type="tel"], select, textarea, input[type="date"] { width:100%; padding:8px; border:1px solid #ccc; border-radius:4px }
+            .row-actions { text-align:right }
+            .btn { background:#2b7cff; color:#fff; border:none; padding:10px 16px; border-radius:4px; cursor:pointer }
+            .btn:disabled { background:#99bff7 }
+            .radio-group label { display:inline-block; margin-right:12px; font-weight:normal }
+            .radio-group input[type="radio"] { margin-right:4px }
+            
