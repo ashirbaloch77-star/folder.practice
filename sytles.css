@@ -1,4 +1,9 @@
-h1,h2 { text-align:center; margin:0 0 12px }
+        
+
+        body{ background-color: #99bff7;}
+
+
+            h1,h2 { text-align:center; margin:0 0 12px }
             form table { width:100%; border-collapse:collapse }
             form td { padding:8px; vertical-align:top }
             label { display:block; font-weight:600; margin-bottom:6px }
