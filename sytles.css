@@ -1,6 +1,6 @@
         
 
-        body{ background-color: #6666CC;}
+        body{ background-color:#CCFFFF;}
 
 
             h1,h2 { text-align:center; margin:0 0 12px; font-family:Arial, sans-serif; color:#061a52 }
@@ -14,3 +14,4 @@
             .radio-group label { display:inline-block; margin-right:12px; font-weight:normal }
             .radio-group input[type="radio"] { margin-right:4px }
             
+
